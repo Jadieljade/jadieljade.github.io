@@ -1,0 +1,30 @@
+/* .poem-container {
+    background-image: href="static/img/arrow.jpg";
+    padding: 50px;
+    margin: auto;
+
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: larger;
+  } */ 
+.poem-container{
+    background: url("/img/poem.jpg") 80% 0 no-repeat fixed;
+    color: white;
+    height: 650px;
+    padding: 200px 0 0 0;
+    padding: 50px;
+    margin: auto;
+    opacity: 100%;
+    
+
+    text-align: left;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    text-align-last: left;
+    }
+
+  .poem1{
+    margin: auto;
+    color: blueviolet;
+    font-size: 30px;
+  }
