@@ -50,11 +50,15 @@
               learning and statitisctics to physics and aeorodynamics.
             </p>
             <div class="tab-titles">
-              <p class="tab-links active-link">Skills</p>
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Education</p>
+              <p class="tab-links active-link" onclick="opentab('skils')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
             </div>
-            <div class="tab-contents">
+            <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
                   <span>DATA ANALYSIS</span> <br />Data analysis using
@@ -68,9 +72,76 @@
                 </li>
               </ul>
             </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>2022- current</span> <br />website developer for
+                  vitolmediquip agencies.<br />
+                  <span>2022-2023</span> <br />virtual intern at Tata<br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <br />lux dev academy data science bootcamp python.<br />
+                  <br />free code camp.<br />
+                  <br />Google data analytics<br />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Services -->
+    <div id="services">
+      <div class="continer">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Front-end Development</h2>
+            <p>
+              Beautiful and responsive website development using html css and
+              javascript
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>backend development</h2>
+            <p>
+              get a dynamic website by imploring flask or django for your
+              backend
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>Data analysis</h2>
+            <p>precise data analysis using pandas and numpy</p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>Android development</h2>
+            <p>beautiful mobile apps development using flutter.</p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
